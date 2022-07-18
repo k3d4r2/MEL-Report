@@ -93,6 +93,12 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     becomes difficult to handle. At night, due to no streetlights it becomes a difficult task of driving on hairpin
     bends and especially while turning. It becomes more difficult at night to make a turn as vehicle coming from
     another side of road is not visible due to darkness.
+    \begin{figure}[htbp]
+        \centerline{\includegraphics[scale=0.5]{arduino-connector}}
+        \caption{Connector cable}
+        \label{fig}
+    \end{figure}
+
     \section{Literature Review}
 
     \subsection{“Sensor Based Accident Prevention System” Author: Aravinda B, Chaithra Lakshmi C, Deeksha, Ashutha K[1]}
@@ -151,17 +157,76 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     section.
 
     \section{Project Plan}
+
+    \subsection{Setup}
+    \subsubsection{Setting up the Arduino}
+    We used the Arduino IDE to write and upload the code via the cable
     \begin{figure}[htbp]
-        \centerline{\includegraphics{arduino-connection}}
+        \centerline{\includegraphics[scale=0.5]{arduino-connector}}
+        \caption{Connector cable}
+        \label{fig}
+    \end{figure}
+
+
+    \begin{verbatim}
+int irSensor = 12;
+int buzzer = 7;
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(irSensor, INPUT);
+  pinMode(buzzer, OUTPUT);
+}
+void loop()
+{
+  int value = digitalRead(irSensor);
+  Serial.println("");
+  Serial.print("Sensor Value = ");
+  Serial.print(value);
+
+  if(value == 0)
+  {
+    digitalWrite(buzzer, HIGH);
+  }
+  else
+  {
+    digitalWrite(buzzer, LOW);
+  }
+  delay(50);
+}
+    \end{verbatim}
+    \subsubsection{Connecting sensors}
+    We use jumper wires to connect the arduino to sensor and buzzer
+    \begin{figure}[htbp]
+        \centerline{\includegraphics[scale=0.15]{connection}}
         \caption{Jumer wire connection}
         \label{fig}
     \end{figure}
-    \subsection{Setup}
-    \subsubsection{Setting up the Arduino}
-    We used
 
+    \subsubsection{Final model}
 
+    This is the final connection. The LED is connected after the model is completed.
+    A 9V battery is used as power source for the arduino.
+    \begin{figure}[htbp]
+        \centerline{\includegraphics[scale=0.15]{final-connection}}
+        \caption{Final connection}
+        \label{fig}
+    \end{figure}
+    \section{Sketch}
 
+    \subsection{Block diagram}
+    \begin{figure}[htbp]
+        \centerline{\includegraphics[scale=0.3]{block-diagram}}
+        \caption{Block Diagram}
+        \label{fig}
+    \end{figure}
+
+    \subsection{Schematic Diagram}
+    \begin{figure}[htbp]
+        \centerline{\includegraphics[scale=0.75]{schematic-diagram}}
+        \caption{Schematic Diagram}
+        \label{fig}
+    \end{figure}
     \section{Components Required}
 
 
@@ -189,7 +254,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     programmed using C and C++ programming languages [3].
 
     \begin{figure}[htbp]
-        \centerline{\includegraphics{fig3_200x200.png}}
+        \centerline{\includegraphics[scale=0.30]{fig3.png}}
         \caption{Arduino UNO top view}
         \label{fig}
     \end{figure}
@@ -213,8 +278,16 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     sensor is defined [4].
 
     \begin{figure}[htbp]
-        \centerline{\includegraphics{ip-sensor}}
+        \centerline{\includegraphics[scale=0.25]{ir-sensor}}
         \caption{IR Sensor}
+        \label{fig}
+    \end{figure}
+
+    \subsection{BUZZER}
+    An audio signaling device like a beeper or buzzer may be electromechanical or piezoelectric or mechanical type. The main function of this is to convert the signal from audio to sound. Generally, it is powered through DC voltage and used in timers, alarm devices, printers, alarms, computers, etc. Based on the various designs, it can generate different sounds like alarm, music, bell & siren
+    \begin{figure}[htbp]
+        \centerline{\includegraphics[scale=0.25]{buzzer}}
+        \caption{Buzzer}
         \label{fig}
     \end{figure}
 
@@ -235,22 +308,18 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     other types of bulbs while using less energy [5].
 
     \begin{figure}[htbp]
-        \centerline{\includegraphics{led}}
+        \centerline{\includegraphics[scale=0.25]{led.jpg}}
         \caption{LED}
         \label{fig}
     \end{figure}
 
     \begin{figure}[htbp]
-        \centerline{\includegraphics{jumper-wires}}
+        \centerline{\includegraphics[scale=0.15]{jumper-wires}}
         \caption{Jumper Wires}
         \label{fig}
     \end{figure}
 
-    \begin{figure}[htbp]
-        \centerline{\includegraphics{pcb-connector}}
-        \caption{PCB}
-        \label{fig}
-    \end{figure}
+
     \subsection{OTHER ITEMS}
     \itemize
     \item Resistors
@@ -265,10 +334,10 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 
     \section{Working Mechanism}
-    It uses two IR sensors, which are
-    placed on one side of the hairpin bend. These two IR sensors
+    It uses an IR sensor, which is
+    placed on one side of the hairpin bend. This IR sensors
     are senses by the side of the downhill section of the road.
-    The sensors are mutually exclusive and are connected to
+    The sensors is connected to
     ATmega328P microcontroller through wires. Based on the
     output of sensors, position of vehicles on other side of the
     bend is detected which is provided as an input to the
@@ -291,6 +360,12 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     when the driver can't see the vehicle in the opposite side of
     the vehicle because of long curve roads in the Ghats section.
     Thus the system offers the safety and security to the driver.
+    \section{Future Scope}
+    \itemize
+    \item[1] Arrangements to protect the sensor from being damaged in critical places.
+    \item[2] Decrease the size of unit so that it occupies small place and easily kept in narrow roads.
+    \item[3] Implementing the system to detect number of vehicles and velocity of vehicle and try to specticate the natural calamities if
+    happen alert may rise on buzzer for no further accidents.
     \section*{Acknowledgment}
 
     Thanks to Mrs. Ashwini Choughule Ma'am for guiding us through the project
