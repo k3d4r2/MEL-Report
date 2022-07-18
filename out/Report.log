@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.17)  19 JUL 2022 01:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.17)  19 JUL 2022 05:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -280,6 +280,21 @@ LaTeX Warning: Label `fig' multiply defined.
 
 LaTeX Warning: Label `fig' multiply defined.
 
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
 )
 \openout1 = `Report.aux'.
 
@@ -326,29 +341,83 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+<hairpin.jpg, id=1, 652.4375pt x 434.62375pt>
+File: hairpin.jpg Graphic file (type jpg)
+<use hairpin.jpg>
+Package pdftex.def Info: hairpin.jpg  used on input line 97.
+(pdftex.def)             Requested size: 228.35654pt x 152.12059pt.
+
+Underfull \vbox (badness 7256) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-<arduino-connection.png, id=10, 200.75pt x 200.75pt>
-File: arduino-connection.png Graphic file (type png)
-<use arduino-connection.png>
-Package pdftex.def Info: arduino-connection.png  used on input line 155.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
- [2 <./arduino-connection.png>]
-<fig3_200x200.png, id=16, 200.75pt x 200.75pt>
-File: fig3_200x200.png Graphic file (type png)
-<use fig3_200x200.png>
-Package pdftex.def Info: fig3_200x200.png  used on input line 192.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-<ip-sensor.png, id=17, 301.125pt x 200.75pt>
-File: ip-sensor.png Graphic file (type png)
-<use ip-sensor.png>
-Package pdftex.def Info: ip-sensor.png  used on input line 216.
-(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+ <./hairpin.jpg>]
+<arduino-connector.jpg, id=10, 471.7625pt x 380.42125pt>
+File: arduino-connector.jpg Graphic file (type jpg)
+<use arduino-connector.jpg>
+Package pdftex.def Info: arduino-connector.jpg  used on input line 165.
+(pdftex.def)             Requested size: 235.88066pt x 190.21014pt.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+71.
 
-./Report.tex:223: Undefined control sequence.
-l.223     \paragraphA
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [2]
+<connection.jpeg, id=16, 1604.99625pt x 902.37125pt>
+File: connection.jpeg Graphic file (type jpg)
+<use connection.jpeg>
+Package pdftex.def Info: connection.jpeg  used on input line 201.
+(pdftex.def)             Requested size: 240.73904pt x 135.34984pt.
+<final-connection.jpeg, id=17, 1604.99625pt x 902.37125pt>
+File: final-connection.jpeg Graphic file (type jpg)
+<use final-connection.jpeg>
+Package pdftex.def Info: final-connection.jpeg  used on input line 211.
+(pdftex.def)             Requested size: 240.73904pt x 135.34984pt.
+<block-diagram.png, id=18, 737.75626pt x 352.31625pt>
+File: block-diagram.png Graphic file (type png)
+<use block-diagram.png>
+Package pdftex.def Info: block-diagram.png  used on input line 219.
+(pdftex.def)             Requested size: 221.32858pt x 105.69568pt.
+<schematic-diagram.png, id=20, 248.93pt x 386.44376pt>
+File: schematic-diagram.png Graphic file (type png)
+<use schematic-diagram.png>
+Package pdftex.def Info: schematic-diagram.png  used on input line 226.
+(pdftex.def)             Requested size: 186.69704pt x 289.8321pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./arduino-connector.jpg> <./connection.jpeg> <./final-connection.jpeg> <./
+block-diagram.png> <./schematic-diagram.png>]
+<fig3.png, id=26, 810.02625pt x 566.115pt>
+File: fig3.png Graphic file (type png)
+<use fig3.png>
+Package pdftex.def Info: fig3.png  used on input line 257.
+(pdftex.def)             Requested size: 243.00975pt x 169.8358pt.
+<ir-sensor.png, id=27, 627.34375pt x 374.39874pt>
+File: ir-sensor.png Graphic file (type png)
+<use ir-sensor.png>
+Package pdftex.def Info: ir-sensor.png  used on input line 281.
+(pdftex.def)             Requested size: 156.83554pt x 93.59946pt.
+
+./Report.tex:287: Misplaced alignment tab character &.
+l.287 ...ifferent sounds like alarm, music, bell &
+                                                   siren
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+<buzzer.jpg, id=28, 501.875pt x 501.875pt>
+File: buzzer.jpg Graphic file (type jpg)
+<use buzzer.jpg>
+Package pdftex.def Info: buzzer.jpg  used on input line 289.
+(pdftex.def)             Requested size: 125.46843pt x 125.46843pt.
+./Report.tex:296: Undefined control sequence.
+l.296     \paragraphA
                       Light Emitting Diode (LED) is an electronic device of a
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -356,32 +425,27 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<led.png, id=18, 200.75pt x 200.75pt>
-File: led.png Graphic file (type png)
-<use led.png>
-Package pdftex.def Info: led.png  used on input line 238.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-<jumper-wires.jpg, id=19, 200.75pt x 200.75pt>
+<led.jpg, id=29, 1204.5pt x 630.355pt>
+File: led.jpg Graphic file (type jpg)
+<use led.jpg>
+Package pdftex.def Info: led.jpg  used on input line 311.
+(pdftex.def)             Requested size: 301.12427pt x 157.58836pt.
+<jumper-wires.jpg, id=30, 1505.625pt x 1129.21875pt>
 File: jumper-wires.jpg Graphic file (type jpg)
 <use jumper-wires.jpg>
-Package pdftex.def Info: jumper-wires.jpg  used on input line 244.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-<pcb-connector.jpg, id=20, 200.75pt x 200.75pt>
-File: pcb-connector.jpg Graphic file (type jpg)
-<use pcb-connector.jpg>
-Package pdftex.def Info: pcb-connector.jpg  used on input line 250.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 256
+Package pdftex.def Info: jumper-wires.jpg  used on input line 317.
+(pdftex.def)             Requested size: 225.834pt x 169.3755pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 325
 .
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 256
+LaTeX Font Info:    Trying to load font information for U+msb on input line 325
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3 <./fig3_200x200.png> <./ip-sensor.png> <./led.png>]
+) [4 <./fig3.png> <./ir-sensor.png> <./buzzer.jpg>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -393,30 +457,31 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./jumper-wires.jpg> <./pcb-connector.jpg>]
+[5 <./led.jpg> <./jumper-wires.jpg>]
 (/home/shirou/Desktop/College work/MEL-Report/out/Report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4265 strings out of 480171
- 66803 string characters out of 5894489
- 368028 words of memory out of 5000000
- 22186 multiletter control sequences out of 15000+600000
- 501717 words of font info for 86 fonts, out of 8000000 for 9000
+ 4367 strings out of 480171
+ 68611 string characters out of 5894489
+ 367030 words of memory out of 5000000
+ 22280 multiletter control sequences out of 15000+600000
+ 502232 words of font info for 88 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 55i,8n,62p,257b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,62p,427b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
-tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on "/home/shirou/Desktop/College work/MEL-Report/out/Report.pdf"
- (4 pages, 394169 bytes).
+ (5 pages, 2201461 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
