@@ -1,2 +1,2 @@
 # MEL-Report
-### Report on the "Accident Preventation System by using IR Sensors" mode
+### Report on the "Accident Preventation System by using IR Sensors" model
